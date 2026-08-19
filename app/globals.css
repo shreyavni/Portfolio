@@ -1,26 +1,78 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.project-cursor-arrow {
+  display: block;
+  color: #6ee7b7;
+  font-size: 1.1rem;
+  transform: translate(-0.15rem, 0.1rem) rotate(35deg);
+  animation: cursor-float 1.8s ease-in-out infinite;
+}
+
+.project-cursor-label {
+  display: block;
+  margin: 0.2rem 0 0 0.65rem;
+  border: 1px solid #52525b;
+  border-radius: 999px;
+  background: #27272a;
+  padding: 0.35rem 0.75rem;
+  color: #f4f4f5;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+@keyframes cursor-float {
+
+  0%,
+  100% {
+    transform: translate(-0.15rem, 0.1rem) rotate(35deg);
+  }
+
+  50% {
+    transform: translate(0.2rem, -0.2rem) rotate(35deg);
+  }
+}
+
+.page-shell {
+  animation: page-enter 520ms cubic-bezier(.2, .8, .2, 1) both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .page-shell,
+  .project-cursor-arrow {
+    animation: none;
+  }
 }
