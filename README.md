@@ -1,6 +1,6 @@
 # Avni Shukla Portfolio
 
-Personal portfolio for Avni Shukla, an AI / ML Engineer building practical
+Avni Shukla - This is my Personal portfolio , an AI / ML Engineer building practical
 machine-learning, Generative AI, and full-stack products.
 
 The site presents selected projects, experience, technical skills, background,
