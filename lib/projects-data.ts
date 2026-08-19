@@ -64,7 +64,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/PathFinder",
     },
     author: "PathFinder",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
   {
     id: "2",
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/Hablot",
     },
     author: "Hablot",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
   {
     id: "3",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/Triply",
     },
     author: "Triply",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
   {
     id: "4",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/EchoMinutes",
     },
     author: "EchoMinutes",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
   {
     id: "5",
@@ -197,7 +197,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/VaultMind",
     },
     author: "VaultMind",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
   {
     id: "6",
@@ -232,7 +232,7 @@ export const projects: Project[] = [
       github: "https://github.com/shreyavni/ResearchCrew",
     },
     author: "ResearchCrew",
-    authorAvatar: "/Hexagon.png",
+    authorAvatar: "/shreyavni.png",
   },
 ];
 
